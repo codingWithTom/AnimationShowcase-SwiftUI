@@ -16,10 +16,17 @@
 		404D5A0F24DA36ED009E899A /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404D5A0E24DA36ED009E899A /* RefreshButton.swift */; };
 		404D5A1124DA36F8009E899A /* FlipToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404D5A1024DA36F8009E899A /* FlipToggleButton.swift */; };
 		404D5A1324DA3709009E899A /* SkewableTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404D5A1224DA3709009E899A /* SkewableTextfield.swift */; };
+		4081900426233881008AB254 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081900326233881008AB254 /* CapsuleButton.swift */; };
+		4081900726233B0B008AB254 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081900626233B0B008AB254 /* ImageButton.swift */; };
+		4081900B26234D75008AB254 /* ShakingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081900A26234D75008AB254 /* ShakingButton.swift */; };
+		4081901026235978008AB254 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081900F26235978008AB254 /* Banner.swift */; };
+		4081901326235B47008AB254 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901226235B47008AB254 /* AlertsView.swift */; };
+		4081901926235ED5008AB254 /* DismissableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901826235ED5008AB254 /* DismissableViewModel.swift */; };
+		40819020262362B7008AB254 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901F262362B7008AB254 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		404D59F624DA36D3009E899A /* AnimationShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		404D59F624DA36D3009E899A /* Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		404D59F924DA36D3009E899A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		404D59FB24DA36D3009E899A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		404D59FD24DA36D3009E899A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +37,13 @@
 		404D5A0E24DA36ED009E899A /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		404D5A1024DA36F8009E899A /* FlipToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipToggleButton.swift; sourceTree = "<group>"; };
 		404D5A1224DA3709009E899A /* SkewableTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkewableTextfield.swift; sourceTree = "<group>"; };
+		4081900326233881008AB254 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
+		4081900626233B0B008AB254 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		4081900A26234D75008AB254 /* ShakingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingButton.swift; sourceTree = "<group>"; };
+		4081900F26235978008AB254 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		4081901226235B47008AB254 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		4081901826235ED5008AB254 /* DismissableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableViewModel.swift; sourceTree = "<group>"; };
+		4081901F262362B7008AB254 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +60,7 @@
 		404D59ED24DA36D3009E899A = {
 			isa = PBXGroup;
 			children = (
-				404D59F824DA36D3009E899A /* AnimationShowcase */,
+				404D59F824DA36D3009E899A /* Showcase */,
 				404D59F724DA36D3009E899A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,24 +68,27 @@
 		404D59F724DA36D3009E899A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				404D59F624DA36D3009E899A /* AnimationShowcase.app */,
+				404D59F624DA36D3009E899A /* Showcase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		404D59F824DA36D3009E899A /* AnimationShowcase */ = {
+		404D59F824DA36D3009E899A /* Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				4081900D2623596B008AB254 /* Alerts */,
+				4081900226233870008AB254 /* Buttons */,
 				404D5A0D24DA36E2009E899A /* Animations */,
 				404D59F924DA36D3009E899A /* AppDelegate.swift */,
 				404D59FB24DA36D3009E899A /* SceneDelegate.swift */,
 				404D59FD24DA36D3009E899A /* ContentView.swift */,
+				4081901226235B47008AB254 /* AlertsView.swift */,
 				404D59FF24DA36D5009E899A /* Assets.xcassets */,
 				404D5A0424DA36D5009E899A /* LaunchScreen.storyboard */,
 				404D5A0724DA36D5009E899A /* Info.plist */,
 				404D5A0124DA36D5009E899A /* Preview Content */,
 			);
-			path = AnimationShowcase;
+			path = Showcase;
 			sourceTree = "<group>";
 		};
 		404D5A0124DA36D5009E899A /* Preview Content */ = {
@@ -92,12 +109,32 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		4081900226233870008AB254 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4081900326233881008AB254 /* CapsuleButton.swift */,
+				4081900626233B0B008AB254 /* ImageButton.swift */,
+				4081900A26234D75008AB254 /* ShakingButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4081900D2623596B008AB254 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				4081900F26235978008AB254 /* Banner.swift */,
+				4081901826235ED5008AB254 /* DismissableViewModel.swift */,
+				4081901F262362B7008AB254 /* Toast.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		404D59F524DA36D3009E899A /* AnimationShowcase */ = {
+		404D59F524DA36D3009E899A /* Showcase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 404D5A0A24DA36D5009E899A /* Build configuration list for PBXNativeTarget "AnimationShowcase" */;
+			buildConfigurationList = 404D5A0A24DA36D5009E899A /* Build configuration list for PBXNativeTarget "Showcase" */;
 			buildPhases = (
 				404D59F224DA36D3009E899A /* Sources */,
 				404D59F324DA36D3009E899A /* Frameworks */,
@@ -107,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = AnimationShowcase;
+			name = Showcase;
 			productName = AnimationShowcase;
-			productReference = 404D59F624DA36D3009E899A /* AnimationShowcase.app */;
+			productReference = 404D59F624DA36D3009E899A /* Showcase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +156,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = CodingWithTom;
 				TargetAttributes = {
 					404D59F524DA36D3009E899A = {
@@ -127,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 404D59F124DA36D3009E899A /* Build configuration list for PBXProject "AnimationShowcase" */;
+			buildConfigurationList = 404D59F124DA36D3009E899A /* Build configuration list for PBXProject "Showcase" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				404D59F524DA36D3009E899A /* AnimationShowcase */,
+				404D59F524DA36D3009E899A /* Showcase */,
 			);
 		};
 /* End PBXProject section */
@@ -163,12 +200,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40819020262362B7008AB254 /* Toast.swift in Sources */,
+				4081901326235B47008AB254 /* AlertsView.swift in Sources */,
+				4081900426233881008AB254 /* CapsuleButton.swift in Sources */,
 				404D59FA24DA36D3009E899A /* AppDelegate.swift in Sources */,
 				404D5A0F24DA36ED009E899A /* RefreshButton.swift in Sources */,
+				4081900726233B0B008AB254 /* ImageButton.swift in Sources */,
 				404D59FC24DA36D3009E899A /* SceneDelegate.swift in Sources */,
 				404D5A1324DA3709009E899A /* SkewableTextfield.swift in Sources */,
 				404D59FE24DA36D3009E899A /* ContentView.swift in Sources */,
+				4081901026235978008AB254 /* Banner.swift in Sources */,
+				4081901926235ED5008AB254 /* DismissableViewModel.swift in Sources */,
 				404D5A1124DA36F8009E899A /* FlipToggleButton.swift in Sources */,
+				4081900B26234D75008AB254 /* ShakingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +256,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -272,6 +317,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -305,14 +351,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AnimationShowcase/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Showcase/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AnimationShowcase/Info.plist;
+				INFOPLIST_FILE = Showcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CodingWithTom.AnimationShowcase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingWithTom.Showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,14 +370,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AnimationShowcase/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Showcase/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AnimationShowcase/Info.plist;
+				INFOPLIST_FILE = Showcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CodingWithTom.AnimationShowcase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingWithTom.Showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		404D59F124DA36D3009E899A /* Build configuration list for PBXProject "AnimationShowcase" */ = {
+		404D59F124DA36D3009E899A /* Build configuration list for PBXProject "Showcase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				404D5A0824DA36D5009E899A /* Debug */,
@@ -350,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		404D5A0A24DA36D5009E899A /* Build configuration list for PBXNativeTarget "AnimationShowcase" */ = {
+		404D5A0A24DA36D5009E899A /* Build configuration list for PBXNativeTarget "Showcase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				404D5A0B24DA36D5009E899A /* Debug */,
