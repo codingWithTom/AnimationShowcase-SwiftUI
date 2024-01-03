@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		4081901326235B47008AB254 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901226235B47008AB254 /* AlertsView.swift */; };
 		4081901926235ED5008AB254 /* DismissableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901826235ED5008AB254 /* DismissableViewModel.swift */; };
 		40819020262362B7008AB254 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901F262362B7008AB254 /* Toast.swift */; };
+		40EDB9962B44F5B30068AD52 /* TimeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDB9952B44F5B30068AD52 /* TimeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		4081901226235B47008AB254 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 		4081901826235ED5008AB254 /* DismissableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableViewModel.swift; sourceTree = "<group>"; };
 		4081901F262362B7008AB254 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		40EDB9952B44F5B30068AD52 /* TimeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				4081900326233881008AB254 /* CapsuleButton.swift */,
 				4081900626233B0B008AB254 /* ImageButton.swift */,
 				4081900A26234D75008AB254 /* ShakingButton.swift */,
+				40EDB9952B44F5B30068AD52 /* TimeButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -155,8 +158,9 @@
 		404D59EE24DA36D3009E899A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = CodingWithTom;
 				TargetAttributes = {
 					404D59F524DA36D3009E899A = {
@@ -204,6 +208,7 @@
 				4081901326235B47008AB254 /* AlertsView.swift in Sources */,
 				4081900426233881008AB254 /* CapsuleButton.swift in Sources */,
 				404D59FA24DA36D3009E899A /* AppDelegate.swift in Sources */,
+				40EDB9962B44F5B30068AD52 /* TimeButton.swift in Sources */,
 				404D5A0F24DA36ED009E899A /* RefreshButton.swift in Sources */,
 				4081900726233B0B008AB254 /* ImageButton.swift in Sources */,
 				404D59FC24DA36D3009E899A /* SceneDelegate.swift in Sources */,
@@ -267,6 +272,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -328,6 +334,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -354,6 +361,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Showcase/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Showcase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +381,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Showcase/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Showcase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

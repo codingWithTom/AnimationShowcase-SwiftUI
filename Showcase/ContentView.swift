@@ -9,16 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State private var isShowingMessage: Bool = false
+  
   var body: some View {
     TabView {
       customInputs
-        .tabItem { Text("Inputs") }
+        .tabItem { Label("Inputs", systemImage: "button.horizontal.top.press.fill") }
       
       customAlerts
-        .tabItem { Text("Alerts") }
+        .tabItem { Label("Alerts", systemImage: "alarm.waves.left.and.right.fill") }
       
       animateableInputs
-        .tabItem { Text("Animateable") }
+        .tabItem { Label("Animateable", systemImage: "figure.run.square.stack.fill") }
     }
   }
   
@@ -33,15 +35,28 @@ struct ContentView: View {
   }
   
   private var customInputs: some View {
-    HStack {
-      VStack {
-        CapsuleButton(action: {})
-        ShakingButton(action: {}, isEnabled: false)
+    VStack {
+      HStack {
+        VStack {
+          CapsuleButton(action: {})
+          ShakingButton(action: {}, isEnabled: false)
+        }
+        VStack {
+          ImageButton(imageName: "suit.heart.fill", isTemplate: true, action: {})
+            .foregroundColor(.red)
+          ImageButton(imageName: "anvil", isTemplate: false, action: {})
+        }
       }
-      VStack {
-        ImageButton(imageName: "suit.heart.fill", isTemplate: true, action: {})
-          .foregroundColor(.red)
-        ImageButton(imageName: "anvil", isTemplate: false, action: {})
+      
+      if !isShowingMessage {
+        TimeButton(title: "Submit Order",
+                   action: { isShowingMessage.toggle() })
+      }
+      
+      if isShowingMessage {
+        Text("Order Submitted!")
+          .foregroundStyle(Color.red)
+          .padding(.top)
       }
     }
   }

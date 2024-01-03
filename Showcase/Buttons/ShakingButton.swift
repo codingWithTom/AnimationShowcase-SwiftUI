@@ -32,7 +32,7 @@ struct ShakingButton: View {
     })
     .offset(x: toggled ? -5 : 0.0, y: 0)
     .animation(toggled ? .spring(response: 0.1, dampingFraction: 0.0, blendDuration: 0)
-                : .linear(duration: 0.0))
+                : .linear(duration: 0.0), value: toggled)
   }
 }
 

@@ -16,9 +16,9 @@ struct FlipToggleButton: View {
       .aspectRatio(contentMode: .fit)
       .foregroundColor(isOn ? .green : .red)
       .rotation3DEffect(Angle(degrees: isOn ? 360 : 0.0), axis: (x: 1.0, y: 0.0, z: 0.0))
-      .animation(.easeOut(duration: 1.0))
+      .animation(.easeOut(duration: 1.0), value: isOn)
       .modifier(TossingEffect(isAnimating: isOn))
-      .animation(.easeOut(duration: 1.0))
+      .animation(.easeOut(duration: 1.0), value: isOn)
       .onTapGesture {
         self.isOn.toggle()
     }
