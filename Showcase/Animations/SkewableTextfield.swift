@@ -33,7 +33,7 @@ struct SkewableTextfield: View {
       }
     }
     .modifier(ShakeEffect(isAnimating: isTextDeleted))
-    .animation(.spring())
+    .animation(.spring(), value: isTextDeleted)
   }
 }
 

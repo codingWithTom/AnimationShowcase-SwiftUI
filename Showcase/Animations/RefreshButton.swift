@@ -16,9 +16,9 @@ struct RefreshButton: View {
       .stroke(Color.blue, style: StrokeStyle(lineWidth: 4.0, lineCap: .round, lineJoin: .round))
       .rotationEffect(Angle(degrees: isAnimating ? 360.0 : 0.0))
       .animation(isAnimating ? Animation.linear(duration: 1.0).repeatForever(autoreverses: false) :
-        Animation.linear(duration: 0.0))
+        Animation.linear(duration: 0.0), value: isAnimating)
       .modifier(ScaleEffect(isAnimating: isAnimating))
-      .animation(isAnimating ? Animation.linear(duration: 1.0).repeatForever(autoreverses: false) : .linear(duration: 0.0))
+      .animation(isAnimating ? Animation.linear(duration: 1.0).repeatForever(autoreverses: false) : .linear(duration: 0.0), value: isAnimating)
       .contentShape(Rectangle())
       .aspectRatio(contentMode: .fit)
       .onTapGesture {
