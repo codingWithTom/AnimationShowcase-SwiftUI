@@ -21,6 +21,9 @@ struct ContentView: View {
       
       animateableInputs
         .tabItem { Label("Animateable", systemImage: "figure.run.square.stack.fill") }
+      
+      HearRateMonitor()
+        .tabItem { Label("Heart", systemImage: "heart.square.fill") }
     }
   }
   
