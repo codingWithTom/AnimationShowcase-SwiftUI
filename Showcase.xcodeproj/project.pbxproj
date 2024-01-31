@@ -23,6 +23,7 @@
 		4081901326235B47008AB254 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901226235B47008AB254 /* AlertsView.swift */; };
 		4081901926235ED5008AB254 /* DismissableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901826235ED5008AB254 /* DismissableViewModel.swift */; };
 		40819020262362B7008AB254 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081901F262362B7008AB254 /* Toast.swift */; };
+		408F36E22B69DA98006CE072 /* HearRateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F36E12B69DA98006CE072 /* HearRateMonitor.swift */; };
 		40EDB9962B44F5B30068AD52 /* TimeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDB9952B44F5B30068AD52 /* TimeButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		4081901226235B47008AB254 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 		4081901826235ED5008AB254 /* DismissableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableViewModel.swift; sourceTree = "<group>"; };
 		4081901F262362B7008AB254 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		408F36E12B69DA98006CE072 /* HearRateMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearRateMonitor.swift; sourceTree = "<group>"; };
 		40EDB9952B44F5B30068AD52 /* TimeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				404D5A0E24DA36ED009E899A /* RefreshButton.swift */,
 				404D5A1024DA36F8009E899A /* FlipToggleButton.swift */,
 				404D5A1224DA3709009E899A /* SkewableTextfield.swift */,
+				408F36E12B69DA98006CE072 /* HearRateMonitor.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				404D5A1324DA3709009E899A /* SkewableTextfield.swift in Sources */,
 				404D59FE24DA36D3009E899A /* ContentView.swift in Sources */,
 				4081901026235978008AB254 /* Banner.swift in Sources */,
+				408F36E22B69DA98006CE072 /* HearRateMonitor.swift in Sources */,
 				4081901926235ED5008AB254 /* DismissableViewModel.swift in Sources */,
 				404D5A1124DA36F8009E899A /* FlipToggleButton.swift in Sources */,
 				4081900B26234D75008AB254 /* ShakingButton.swift in Sources */,
